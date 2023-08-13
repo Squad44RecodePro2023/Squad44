@@ -1,21 +1,26 @@
-body{
-    background: var(--cor-fundo);
-    color: var(--cor-texto);
+body {
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
 }
 a {
-    color: var(--cor-texto)!important;
+  color: var(--cor-texto) !important;
 }
-.active{
-    font-weight: 900;
-    color: var(--cor-texto-alternativo)!important;
+.active {
+  font-weight: 900;
+  color: var(--cor-texto-alternativo) !important;
 }
 .disabled {
-    opacity: 0.5!important;
+  opacity: 0.5 !important;
 }
 footer i {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 footer .downloads a > img {
-    width: 200px;
+  width: 200px;
+}
+
+#linktermos {
+  color: blue;
+  text-decoration: none;
 }

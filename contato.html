@@ -85,7 +85,7 @@
     <!-- Inicio do Main -->
     <main style="background-color: white">
       <div class="card mb-3">
-        <img src="src/img/contatoimg.png" class="card-img-top" alt="..." />
+        <img src="#" class="card-img-top" alt="..." />
         <div class="card-body">
           <h2 class="card-title" style="text-align: center; color: #00a8e8ff">
             Bem-vindo à nossa página de contato!
@@ -105,11 +105,13 @@
         <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
-              <h3 class="card-title">Entre em contato</h3>
+              <h3 class="card-title" style="text-align: center">
+                Entre em contato
+              </h3>
               <p class="card-text" style="text-align: justify">
                 Use o nosso formulário de contato para todas as solicitações de
                 informações e relatar problemas ou entre em contato diretamentes
-                usando outras plataformas de contato ao lado.
+                usando outras plataformas.
               </p>
               <!-- Inicio do Fórmulario na Main -->
               <div class="mb-3">
@@ -144,29 +146,80 @@
                   placeholder="Digite aqui a sua mensagem"
                   rows="3"
                 ></textarea>
+                <br />
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Ao clicar, você esta de acordo com os nossos
+
+                    <a id="linktermos" href="#"> Termos de Uso</a>
+
+                    e nossa
+                    <a id="linktermos" href="#">Política de Privacidade</a>
+                    do iFormal
+                  </label>
+                </div>
               </div>
               <!-- Fim do Fórmulario do card na Main -->
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+              <a href="#" class="btn btn-primary">Enviar</a>
             </div>
           </div>
         </div>
+        <!-- Inicio de outras formas de contato -->
         <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title" style="text-align: justify">
-                Sinta-se à vontade para entrar em contato conosco via e-mail ou
-                telefone.
+                Sinta-se à vontade para entrar em contato conosco!
               </h5>
               <p class="card-text" style="text-align: justify">
                 Sua opinião é extremamente valiosa para nós, pois nos ajuda a
                 melhorar continuamente e oferecer o melhor para você.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+              <hr />
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <img
+                    style="width: 25px"
+                    src="src/img/img page contato/icon location.png"
+                  />
+                  Localização do nosso escritório: Avenida novenovenove, nº000,
+                  bairro, cidade, estado, CEP:0000-000.
+                </li>
+                <li class="list-group-item">
+                  <img
+                    style="width: 25px"
+                    src="src/img/img page contato/icon cellphone.png"
+                  />
+                  Telefone: (00) 00000-0000
+                </li>
+                <li class="list-group-item">
+                  <img
+                    style="width: 25px"
+                    src="src/img/img page contato/icon wpp.png"
+                  />
+                  WhatsApp: (00) 00000-0000
+                </li>
+                <li class="list-group-item">
+                  <img
+                    style="width: 25px"
+                    src="src/img/img page contato/icon email.png"
+                  />
+                  Email:xxxx, xxxx, xxxx.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <!-- Inicio do card do Fórmulario na Main -->
+      <!-- Fim de outras formas de contato -->
     </main>
     <!-- Fim do Main     -->
 
