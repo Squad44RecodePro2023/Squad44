@@ -19,8 +19,11 @@ footer i {
 footer .downloads a > img {
   width: 200px;
 }
+/* Inicio do CSS da Page Contato */
 
 #linktermos {
   color: blue;
   text-decoration: none;
 }
+
+/* Fim do CSS da Page Contato */
