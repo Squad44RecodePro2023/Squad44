@@ -37,10 +37,17 @@ function checkUserPreference() {
 
 checkUserPreference();
 
-
+const toggleMenu = document.getElementById('toggleMenu');
 const navIco = document.querySelector('#nav-icon1');
-
-navIco.addEventListener('click', function() {
-    navIco.classList.toggle('open');
-  });
-
+toggleMenu.addEventListener('click', ()=>{
+    const ariaExpanded = toggleMenu.getAttribute('aria-expanded');
+    console.log(ariaExpanded)
+    if (ariaExpanded==='true') {
+        console.log('open')
+        navIco.classList.add('open');
+    } 
+    else {
+        console.log('close')
+        navIco.classList.remove('open') ;
+    }
+})
