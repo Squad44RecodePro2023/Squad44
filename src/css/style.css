@@ -63,7 +63,7 @@ footer .downloads a>img {
 #nav-icon1 span {
     display: block;
     position: absolute;
-    height: .2rem;
+    height: .15rem;
     width: 100%;
     background: var(--cor-texto);
     border-radius: .5rem;
@@ -80,15 +80,15 @@ footer .downloads a>img {
 }
 
 #nav-icon1 span:nth-child(1) {
-    top: 0.3rem;
+    top: 0.2rem;
 }
 
 #nav-icon1 span:nth-child(2) {
-    top: 0.8rem;
+    top: 0.7rem;
 }
 
 #nav-icon1 span:nth-child(3) {
-    top: 1.3rem;
+    top: 1.2rem;
 }
 
 #nav-icon1.open span:nth-child(1) {
