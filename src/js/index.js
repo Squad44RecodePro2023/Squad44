@@ -36,3 +36,11 @@ function checkUserPreference() {
 }
 
 checkUserPreference();
+
+
+const navIco = document.querySelector('#nav-icon1');
+
+navIco.addEventListener('click', function() {
+    navIco.classList.toggle('open');
+  });
+
