@@ -26,6 +26,10 @@ footer .downloads a > img {
   text-decoration: none;
 }
 
+#contatoresponsividade {
+  overflow: hidden;
+  background-color: rgba(0, 0, 255, 0.733);
+}
 /* Fim do CSS da Page Contato */
 
 /* Inicio do CSS da Page Login */
