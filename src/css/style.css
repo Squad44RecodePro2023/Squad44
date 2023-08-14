@@ -31,17 +31,18 @@ footer .downloads a > img {
 /* Inicio do CSS da Page Login */
 #background {
   height: 32em;
-  background: red;
+  background: rgba(0, 0, 255, 0.733);
 }
 
 #cardconfig {
   display: flex;
   align-content: center;
   border: none;
-  background: blue;
+  background: white;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
 }
-/* Inicio do CSS da Page Login */
+
+/* Fim do CSS da Page Login */
