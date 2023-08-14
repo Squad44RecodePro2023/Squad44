@@ -27,3 +27,21 @@ footer .downloads a > img {
 }
 
 /* Fim do CSS da Page Contato */
+
+/* Inicio do CSS da Page Login */
+#background {
+  height: 30em;
+  background: red;
+}
+
+#cardconfig {
+  display: flex;
+  align-content: center;
+  border: none;
+  background: blue;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/* Inicio do CSS da Page Login */
