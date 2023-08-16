@@ -43,8 +43,8 @@ footer .downloads a>img {
 }
 
 #hero {
-    height: 55vh;
-    background: url('../img/hero.jpg') center / cover no-repeat;
+    height: 35vh;
+    background: url('../img/hero.jpg') var(--cor-destaque) center bottom / contain repeat-x;
     animation: heroChange 20s 4s infinite;
   }
 
