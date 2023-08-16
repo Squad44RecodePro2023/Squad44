@@ -1,3 +1,12 @@
+/* * {
+    transition: background-color 3s color 3s ease-in-out !important;
+    
+} */
+
+* {
+    
+    transition:background-color .5s;
+}
 body {
     background: var(--cor-fundo);
     color: var(--cor-texto);
@@ -10,6 +19,10 @@ body {
 
 a {
     color: var(--cor-texto) !important;
+    transition: color 0.5s !important;
+}
+a:hover {
+    color: var(--cor-destaque) !important;
 }
 
 .active {
