@@ -13,53 +13,60 @@
 </head>
 
 <body>
-    <!-- Inicio do NavaBar -->
-    <nav class="navbar navbar-expand-lg shadow-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">iFormal</a>
 
-            <div class="btn-group mx-2 ms-auto" role="group" aria-label="Basic radio toggle button group" id="btnTema">
-                <input type="radio" class="btn-check" name="btnradio" id="btnClaro" autocomplete="off">
-                <label class="btn btn-outline-secondary" for="btnClaro">Claro</label>
-                <input type="radio" class="btn-check" name="btnradio" id="btnEscuro" autocomplete="off">
-                <label class="btn btn-outline-secondary" for="btnEscuro">Escuro</label>
+    <header>
+        <!-- Inicio do NavaBar -->
+        <nav class="navbar navbar-expand-lg shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">iFormal</a>
+
+                <div class="btn-group mx-2 ms-auto" role="group" aria-label="Basic radio toggle button group"
+                    id="btnTema">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnClaro" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btnClaro">Claro</label>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnEscuro" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btnEscuro">Escuro</label>
+                </div>
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" id="toggleMenu">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <div id="nav-icon1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
             </div>
-
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation" id="toggleMenu">
-            <!-- <span class="navbar-toggler-icon"></span> -->
-            <div id="nav-icon1">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-        </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                </ul>
-            </div>
-
-           
-
+        </nav>
+        <!-- Fim do NavaBar     -->
+        <!-- Hero -->
+        <div id="hero">
         </div>
-    </nav>
-    <!-- Fim do NavaBar     -->
-
+        <!-- Fim do hero -->
+    </header>
 
     <!-- Inicio do Main -->
     <main>
@@ -78,16 +85,16 @@
                     <h5>Institucional</h5>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3">
-                  
-                        <h5>Section</h5>
-                        <ul class="nav flex-column">
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0"></a>Features</a></li>
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0" >About</a></li>
-                        </ul>
-                      
+
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0"></a>Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+                    </ul>
+
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 downloads">
                     <h5>Downloads</h5>
@@ -104,16 +111,16 @@
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
                     </li>
-                    <li class="ms-3"><a  href="#">
+                    <li class="ms-3"><a href="#">
                             <i class="fab fa-instagram mr-3"></i>
                         </a>
                     </li>
-                    <li class="ms-3"><a  href="#">
-                        <i class="fa-brands fa-twitter"></i>
+                    <li class="ms-3"><a href="#">
+                            <i class="fa-brands fa-twitter"></i>
                         </a>
                     </li>
                     <li class="ms-3"><a href="#">
-                        <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-youtube"></i>
 
                         </a>
                     </li>

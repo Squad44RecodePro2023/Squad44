@@ -4,6 +4,7 @@ const btnClaro = document.getElementById('btnClaro');
 btnEscuro.addEventListener('click', checkedRadio);
 btnClaro.addEventListener('click', checkedRadio);
 
+
 const cssTheme = document.getElementById('color-theme');
 
 function lightToDark() {
@@ -26,10 +27,8 @@ function checkUserPreference() {
   const prefersLightTheme = window.matchMedia('(prefers-color-scheme: light)').matches;
 
   if (prefersLightTheme) {
-    btnEscuro.checked = false;
     btnClaro.checked = true;
   } else {
-    btnClaro.checked = false;
     btnEscuro.checked = true;
   }
   checkedRadio() 

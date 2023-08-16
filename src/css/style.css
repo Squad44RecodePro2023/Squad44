@@ -42,6 +42,12 @@ footer .downloads a>img {
     }
 }
 
+#hero {
+    height: 55vh;
+    background: url('../img/hero.jpg') center / cover no-repeat;
+    animation: heroChange 20s 4s infinite;
+  }
+
 /* Menu hamburger Personalizado */
 
 #nav-icon1 {
