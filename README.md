@@ -28,9 +28,9 @@ Equipe
 - [Ilnara Ackermann](https://github.com/ilnaraackermann)
 - [Greiciele Cristina Vieira dos Santos](https://github.com/GreicyVieira)
 - [Jéssika Haber](https://github.com/jessikahaber)
-- [Graciellen](https://github.com/Graciellen)
-- [Gustavo Carvalho](https://github.com/GustavoCarvalhoV)
-- [Halluchã]()
+- [Graciellen Pereira de Paula](https://github.com/Graciellen)
+- [Gustavo de Carvalho Venceslau](https://github.com/GustavoCarvalhoV)
+- [Halluchã Madureira Silva.](https://github.com/hallucha)
 
 **Impacto esperado** 🌟
 
