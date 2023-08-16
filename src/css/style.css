@@ -44,32 +44,44 @@ footer .downloads a>img {
 
 #hero {
     height: 35vh;
-    background: url('../img/hero.jpg') var(--cor-destaque) center bottom / contain repeat-x;
-    animation: heroChange 20s 4s infinite;
+    background: url('../img/hero.jpg') var(--cor-destaque) center / contain repeat-x;
     display: flex;
     justify-content: right;
     /* align-items: center; */
     padding: 1rem;
-  }
+}
+
+
 
 #herotext {
-    text-shadow: 
-    2px 2px 3px #fff, 
-    -2px -2px 3px #fff, 
-    -2px 2px 3px #fff, 
-    -2px -2px 3px #fff, 
-    2px 0px 3px #fff, 
-    0px 2px 3px #fff, 
-    -2px 0px 3px #fff, 
-    0px -2px 3px #fff;    
+    text-shadow:
+        2px 2px 3px #fff,
+        -2px -2px 3px #fff,
+        -2px 2px 3px #fff,
+        -2px -2px 3px #fff,
+        2px 0px 3px #fff,
+        0px 2px 3px #fff,
+        -2px 0px 3px #fff,
+        0px -2px 3px #fff;
     font-size: 2rem;
     font-weight: 600;
     color: #000;
+}
+
+@media screen and (max-width: 600px) {
+    #hero {
+        background: url('../img/hero.jpg') var(--cor-destaque) center / cover repeat-x;
     }
 
-#nav-top{
+    #herotext {
+        font-size: 1.5rem;
+    }
+}
+
+#nav-top {
     min-height: 3.5rem;
 }
+
 nav {
     background-color: var(--cor-fundo);
 }
