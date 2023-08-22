@@ -120,11 +120,12 @@ ul, li {
     border-radius: .5rem;
     margin: .5rem;
     width: 8rem;
+    height: 6rem;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
+
 #categorias-servicos li:hover,
 #categorias-servicos li:focus{
     content: ''; 
@@ -136,6 +137,8 @@ ul, li {
 #categorias-servicos li i{
     font-size: 2rem;
 }
+  
+ 
   
 
 /* Menu hamburger Personalizado */
