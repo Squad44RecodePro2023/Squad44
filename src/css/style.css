@@ -1,7 +1,6 @@
-/* * {
-    transition: background-color 3s color 3s ease-in-out !important;
-    
-} */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css');
 
 * {
     
@@ -64,8 +63,6 @@ footer .downloads a>img {
     padding: 1rem;
 }
 
-
-
 #herotext {
     text-shadow:
         2px 2px 3px #fff,
@@ -97,6 +94,47 @@ footer .downloads a>img {
 
 nav {
     background-color: var(--cor-fundo);
+}
+
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav Categoria de Serviços*/
+#categorias-servicos {
+    padding: .7rem;
+}
+
+#categorias-servicos li {
+    padding: .5rem;
+}
+
+#assis-tecnica::before{
+    content: '';
+}
+#serv-domestico::before{
+    content: '';
+}
+#reforma-reparos::before{
+    content: '';
+}
+#saude::before{
+    content: '';
+}
+#automoveis::before{
+    content: '';
+}
+#consultoria::before{
+    content: '';
+}
+#desing-tecnologia::before{
+    content: '';
+}
+#aulas-reforco::before{
+    content: '';
 }
 
 /* Menu hamburger Personalizado */
