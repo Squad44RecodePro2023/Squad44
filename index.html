@@ -30,7 +30,6 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation" id="toggleMenu">
-                        <!-- <span class="navbar-toggler-icon"></span> -->
                         <div id="nav-icon1">
                             <span></span>
                             <span></span>
@@ -69,8 +68,11 @@
 
         <!-- Nav categorias -->
         <nav>
-            <div class="container-fluid dropdown" id="categorias-servicos">
-                <ul class="dropdown-content">
+            
+            <input class="show-more"  type="checkbox" id="show-more">
+
+            <div class="container-fluid" id="categorias-servicos">
+                <ul>
                     <li tabindex="0">
                         <i class="fa-solid fa-screwdriver-wrench"></i>
                         <span>Assistencia Técnica</span>
@@ -93,7 +95,7 @@
                     </li>
                     <li tabindex="0">
                         <i class="fa-solid fa-car-side"></i>
-                       <span>Automóveis</span>
+                        <span>Automóveis</span>
                     </li>
                     <li tabindex="0">
                         <i class="fa-solid fa-champagne-glasses"></i>
@@ -113,6 +115,11 @@
                     </li>
                 </ul>
             </div>
+            
+            <label class="show-more" for="show-more"> <span><i class="fa-solid fa-circle-plus"></i></span></label>
+            <label class="show-less" for="show-more"> <span><i class="fa-solid fa-circle-minus"></i></span></label>
+
+
         </nav>
         <!-- Fim Nav categorias -->
 

@@ -2,9 +2,10 @@
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css');
 
 * {
-    
-    transition:background-color .5s;
+
+    transition: background-color .5s;
 }
+
 body {
     background: var(--cor-fundo);
     color: var(--cor-texto);
@@ -19,6 +20,7 @@ a {
     color: var(--cor-texto) !important;
     transition: color 0.5s !important;
 }
+
 a:hover {
     color: var(--cor-destaque) !important;
 }
@@ -96,7 +98,8 @@ nav {
 }
 
 
-ul, li {
+ul,
+li {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -104,8 +107,53 @@ ul, li {
 
 /* Nav Categoria de Serviços*/
 #categorias-servicos {
-    padding: .7rem;
+    overflow: hidden;
+    height: 7rem;
 }
+
+.show-more {
+    display: none;
+}
+
+input.show-more {
+    display: none;
+}
+
+.show-less {
+    display: none;
+}
+
+@media screen and (max-width: 1479px) {
+    .show-more {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    label span {
+        cursor: pointer;
+    }
+
+    label span:hover {
+        color: var(--cor-destaque);
+    }
+
+    input.show-more:checked+#categorias-servicos {
+        height: auto;
+    }
+
+    input.show-more:checked~label.show-more {
+        display: none;
+    }
+
+    input.show-more:checked~label.show-less {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+}
+
 #categorias-servicos ul {
     display: flex;
     flex-wrap: wrap;
@@ -116,7 +164,7 @@ ul, li {
     display: flex;
     padding: .5rem;
     text-align: center;
-    border:1px solid var(--cor-destaque);
+    border: 1px solid var(--cor-destaque);
     border-radius: .5rem;
     margin: .5rem;
     width: 8rem;
@@ -127,19 +175,19 @@ ul, li {
 }
 
 #categorias-servicos li:hover,
-#categorias-servicos li:focus{
-    content: ''; 
+#categorias-servicos li:focus {
+    content: '';
     background-color: var(--cor-secundaria);
     color: var(--cor-destaque);
     border-width: 3px;
 }
 
-#categorias-servicos li i{
+#categorias-servicos li i {
     font-size: 2rem;
 }
-  
- 
-  
+
+
+
 
 /* Menu hamburger Personalizado */
 
