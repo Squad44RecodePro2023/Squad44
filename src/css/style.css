@@ -107,35 +107,29 @@ ul, li {
 #categorias-servicos {
     padding: .7rem;
 }
+#categorias-servicos ul {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #categorias-servicos li {
+    display: flex;
     padding: .5rem;
+    text-align: center;
+    border:1px solid var(--cor-destaque);
+    border-radius: .5rem;
+    margin: .5rem;
+    width: 8rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
-#assis-tecnica::before{
-    content: '';
+#categorias-servicos li i{
+    font-size: 2rem;
 }
-#serv-domestico::before{
-    content: '';
-}
-#reforma-reparos::before{
-    content: '';
-}
-#saude::before{
-    content: '';
-}
-#automoveis::before{
-    content: '';
-}
-#consultoria::before{
-    content: '';
-}
-#desing-tecnologia::before{
-    content: '';
-}
-#aulas-reforco::before{
-    content: '';
-}
+
 
 /* Menu hamburger Personalizado */
 
