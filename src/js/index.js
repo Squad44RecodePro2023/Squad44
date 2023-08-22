@@ -52,18 +52,3 @@ toggleMenu.addEventListener('click', ()=>{
 })
 
 
-
-// test
-
-function checkCheckbox() {
-  if (this.checked) {
-    console.log('checked')
-  } else {    
-    console.log('unchecked')
-
-  }
-}
-
-const btnCheck = document.getElementById('show-more');
-
-btnCheck.addEventListener('change', checkCheckbox)

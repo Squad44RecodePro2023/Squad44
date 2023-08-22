@@ -68,8 +68,8 @@
 
         <!-- Nav categorias -->
         <nav>
-            
-            <input class="show-more"  type="checkbox" id="show-more">
+
+            <input class="show-more" type="checkbox" id="show-more">
 
             <div class="container-fluid" id="categorias-servicos">
                 <ul>
@@ -115,7 +115,7 @@
                     </li>
                 </ul>
             </div>
-            
+
             <label class="show-more" for="show-more"> <span><i class="fa-solid fa-circle-plus"></i></span></label>
             <label class="show-less" for="show-more"> <span><i class="fa-solid fa-circle-minus"></i></span></label>
 
@@ -129,32 +129,114 @@
     <!-- Inicio do Main -->
     <main>
 
+        <div id="carouselExampleIndicators" class="carousel slide container">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card mb-3">
+                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small >Last updated 3 mins ago</small></p>
+                          <a href="#" class="btn">Button</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card mb-3">
+                    <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small >Last updated 3 mins ago</small></p>
+                      <a href="#" class="btn">Button</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card mb-3">
+                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small >Last updated 3 mins ago</small></p>
+                          <a href="#" class="btn">Button</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
     </main>
     <!-- Fim do Main     -->
 
     <!-- Inicio do Footer -->
     <footer class="py-5 container">
-        <div class="container text-center">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <h5>Serviços</h5>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <h5>Institucional</h5>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+                    <div>
+                        <h5>Serviços</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Assistencia Técnica</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Serviços Domésticos</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Moda e Beleza</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Reformas e Reparos</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Saúde</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Automóveis</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Eventos</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Consultoria</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Desing e Tecnologia</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Aulas e Reforços</a></li>
+                        </ul>
+                    </div>
 
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0"></a>Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
-                    </ul>
-
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 downloads">
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+                   <div>
+                        <h5>Institucional</h5> 
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Quem somos</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Nossa visão</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Trabalhe Conosco</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Parceiros</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Juridico</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Comunidade iFormal</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Blog iFormal</a></li>
+                        </ul>
+                   </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+                    <div>
+                        <h5>Ajuda</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Perguntas Frequentes</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"></a>Termos de Uso</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Politica de Privacidade</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Mapa do Site</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Fale Conosco</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 downloads mt-3">
                     <h5>Downloads</h5>
                     <a href="#"><img src="src/img/google.png" alt="Disponível no Google Play" class="mb-3"></a>
                     <a href="#"><img src="src/img/apple.png" alt="Disponível na App Store" class="mb-3"></a>
