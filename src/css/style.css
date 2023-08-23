@@ -212,6 +212,46 @@ input.show-more {
 a.btn{
     background-color: var(--cor-secundaria);
 }
+
+
+/* citações*/
+.comentarios {
+display: flex;
+justify-content: space-between;
+}
+.citacao {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    position: relative;
+    background-color: var(--cor-fundo-destaque);
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+.citacao p {
+    text-align: justify;
+}
+.citacao div.star {
+    /* align-self: center; */
+    margin-top: 2rem;
+    font-size: 1.5rem;
+
+}
+.citacao span{    
+    font-size: 3rem;
+    position: absolute;
+}
+.citacao span:first-of-type{
+    top: 0;
+    left: 1rem;
+}
+.citacao span:last-of-type{
+    right: 1rem;
+    bottom:0;
+}
+
+
 /* Menu hamburger Personalizado */
 
 #nav-icon1 {
