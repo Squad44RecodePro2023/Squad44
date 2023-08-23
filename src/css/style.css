@@ -43,7 +43,7 @@ footer .downloads a>img {
 }
 
 
-footer .row > div {
+footer .row>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,31 +194,36 @@ input.show-more {
 }
 
 /* Card carrossel*/
-#carouselExampleIndicators{
+#carouselExampleIndicators {
     margin-top: 2rem;
 }
+
 .card {
     color: var(--cor-texto);
     background-color: var(--cor-fundo);
     border-color: var(--cor-texto-alternativo0.5);
 }
-.card-img-top {
+
+#carouselExampleIndicators .card-img-top {
     height: 30rem;
     object-fit: cover;
 }
+
 .card small {
     opacity: .7;
 }
-a.btn{
+
+a.btn {
     background-color: var(--cor-secundaria);
 }
 
 
 /* citações*/
 .comentarios {
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
 .citacao {
     display: flex;
     flex-direction: column;
@@ -229,26 +234,31 @@ justify-content: space-between;
     border-radius: 1rem;
     align-items: center;
 }
+
 .citacao p {
     text-align: justify;
 }
+
 .citacao div.star {
     /* align-self: center; */
     margin-top: 2rem;
     font-size: 1.5rem;
 
 }
-.citacao span{    
+
+.citacao span {
     font-size: 3rem;
     position: absolute;
 }
-.citacao span:first-of-type{
+
+.citacao span:first-of-type {
     top: 0;
     left: 1rem;
 }
-.citacao span:last-of-type{
+
+.citacao span:last-of-type {
     right: 1rem;
-    bottom:0;
+    bottom: 0;
 }
 
 
