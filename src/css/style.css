@@ -19,6 +19,7 @@ body {
 a {
     color: var(--cor-texto) !important;
     transition: color 0.5s !important;
+    text-decoration: none;
 }
 
 a:hover {
@@ -111,6 +112,7 @@ li {
     margin: 0;
     padding: 0;
 }
+
 
 /* Nav Categoria de Serviços*/
 #categorias-servicos {
@@ -227,7 +229,6 @@ a.btn {
 .citacao {
     display: flex;
     flex-direction: column;
-    width: 30%;
     position: relative;
     background-color: var(--cor-fundo-destaque);
     padding: 1rem 5rem;
@@ -240,7 +241,6 @@ a.btn {
 }
 
 .citacao div.star {
-    /* align-self: center; */
     margin-top: 2rem;
     font-size: 1.5rem;
 
@@ -259,6 +259,13 @@ a.btn {
 .citacao span:last-of-type {
     right: 1rem;
     bottom: 0;
+}
+
+.card a {
+    color: var(--cor-texto-alternativo) !important;
+}
+.card a:hover {
+    color: var(--cor-destaque) !important;
 }
 
 
