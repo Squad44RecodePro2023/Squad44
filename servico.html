@@ -40,13 +40,13 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="login.html">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="servico.html">Serviços</a>
+                                <a class="nav-link active"  href="servico.html">Serviços</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contato.html">Contato</a>
@@ -71,7 +71,7 @@
 
             <input class="show-more" type="checkbox" id="show-more">
 
-            <div class="container-fluid" id="categorias-servicos">
+            <div id="categorias-servicos">
                 <ul>
                     <li tabindex="0">
                         <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -136,71 +136,177 @@
     </header>
 
     <!-- Inicio do Main -->
-    <main>
+    <main class="container">
 
-        <!-- card carroussel -->
-        <div id="carouselExampleIndicators" class="carousel slide container">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card mb-3">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                            <a href="#" class="btn">Button</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card mb-3">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                            <a href="#" class="btn">Button</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card mb-3">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                            <a href="#" class="btn">Button</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <!-- fim do carrossel -->
+        <nav class="navigatorBreadCrumb" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Serviços</li>
+            </ol>
+          </nav>
 
-        <!-- Quotes -->
-        <section class="container">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+
+
+        
+        <!-- Serviços em destaque -->
+        <!-- Fim Serviços -->
+
+
+
+        <!-- proffisionais em destaque -->
+        <section>
+            <h5 class="py-3">Profissionais em Destaque</h5>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus. Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
+                            <h5>Serviços</h5>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                </ul>
+                            </div>
+                        <div class="card-footer">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span><a href="#">(57)</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus. Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
+                            <h5>Serviços</h5>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                </ul>
+                            </div>
+                        <div class="card-footer">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span><a href="#">(57)</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus. Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
+                            <h5>Serviços</h5>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                </ul>
+                            </div>
+                        <div class="card-footer">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span><a href="#">(57)</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus. Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
+                            <h5>Serviços</h5>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                </ul>
+                            </div>
+                        <div class="card-footer">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span><a href="#">(57)</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus. Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
+                            <h5>Serviços</h5>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                </ul>
+                            </div>
+                        <div class="card-footer">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span><a href="#">(57)</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus. Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
+                            <h5>Serviços</h5>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                </ul>
+                            </div>
+                        <div class="card-footer">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span><a href="#">(57)</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- fim profissionais -->
+
+        <!-- Avalicaoes -->
+        <section >
 
             <h5 class="py-3">Comentarios de nosso clientes</h5>
             <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
@@ -245,7 +351,55 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
+                            inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
+                        <p><small><a href="#">Nome do Autor</a></small></p>
+                        <span><i class="fa-solid fa-quote-right"></i></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="citacao">
+                        <span><i class="fa-solid fa-quote-left"></i></span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
+                            inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
+                        <p><small><a href="#">Nome do Autor</a></small></p>
+                        <span><i class="fa-solid fa-quote-right"></i></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="citacao">
+                        <span><i class="fa-solid fa-quote-left"></i></span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
+                            inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
+                        <p><small><a href="#">Nome do Autor</a></small></p>
+                        <span><i class="fa-solid fa-quote-right"></i></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="citacao">
+                        <span><i class="fa-solid fa-quote-left"></i></span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
                             inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
@@ -259,58 +413,7 @@
             
 
         </section>
-        <!-- Fim quotes -->
-
-        <!-- artigos -->
-        <section class="container">
-            <h5 class="py-3">Ultimos artigos</h5>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus. Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
-                            </div>
-                            <p class="text-end p-1"> <a href="#">Leia mais...</a></p>
-                        <div class="card-footer">
-                            <small>Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates ipsa maiores dolorum earum natus, soluta, veniam similique illo dolores, doloribus architecto delectus. Consequatur, dolore est.</p>
-                            </div>
-                            <p class="text-end p-1"><a  href="#">Leia mais...</a></p>
-                        <div class="card-footer">
-                            <small>Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatum corporis fuga repellendus consequatur veritatis amet beatae ea voluptate, dolore officiis et dolor. Quia totam nam eos ea, iste fuga.</p>
-                            </div>
-                            <p class="text-end">
-                                <a href="#">Leia mais...</a></p>
-                        <div class="card-footer">
-                            <small>Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
-        <!-- fim artigos -->
-
+        <!-- Fim avaliacao -->
     </main>
     <!-- Fim do Main     -->
 
