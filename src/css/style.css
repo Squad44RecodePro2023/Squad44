@@ -65,3 +65,21 @@ footer .downloads a > img {
 }
 
 /* Fim do CSS da Page Login */
+
+/* Inicio do CSS da Page CADASTRO */
+#background2 {
+  background: white;
+}
+
+#cardconfig2 {
+  display: flex;
+  align-content: center;
+  border: none;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3%;
+  margin-bottom: auto;
+}
+
+/* Fim do CSS da Page CADASTRO */
