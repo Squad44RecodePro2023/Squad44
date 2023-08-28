@@ -28,7 +28,22 @@ footer .downloads a > img {
 
 #contatoresponsividade {
   overflow: hidden;
-  background-color: rgba(0, 0, 255, 0.733);
+  background: white;
+  border: none;
+}
+
+#formulariocontato1 {
+  border: none;
+  align-items: center;
+}
+
+#formulariocontato2 {
+  border: none;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+#exampleFormControlInput1 {
 }
 /* Fim do CSS da Page Contato */
 
