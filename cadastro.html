@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/color_light.css" id="color-theme">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>iFormal</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- Inicio do NavaBar -->
+    <div id="nav-top">
+      <nav class="navbar navbar-expand-lg shadow position-absolute container-fluid z-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">iFormal</a>
+
+          <div class="btn-group mx-2 ms-auto" role="group" aria-label="Basic radio toggle button group" id="btnTema">
+            <input type="radio" class="btn-check" name="btnradio" id="btnClaro" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="btnClaro">Claro</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnEscuro" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="btnEscuro">Escuro</label>
+          </div>
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" id="toggleMenu">
+            <div id="nav-icon1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servico.html">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+
+
+
+        </div>
+      </nav>
+    </div>
+    <!-- Fim do NavaBar     -->
+
+    <!-- Inicio do Main CADASTRO -->
+    <main class="container mt-4">
+
+      <nav class="navigatorBreadCrumb" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="login.html">Login</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Cadastro</li>
+        </ol>
+      </nav>
+
+
+        <div class="cardconfig card shadow">
+          <div class="card-body">
+            <h5 class="card-title text-center">Crie sua conta</h5>
+            <br />
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Nome completo</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Escreva seu nome completo">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Usuário</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Escreva o seu usuário">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">CPF</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Digite seu CPF">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Contato</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="(00) 00000-0000">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="exemplo@exemplo.com">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="inputPassword4" aria-describedby="passwordHelpBlock" placeholder="********">
+                <div id="passwordHelpBlock" class="form-text">
+                    Sua senha deve conter de 8-20 caracteres.
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Rua XXX, nº000">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Complemento</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, condomínio, lote...">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6">
+                <label for="inputState" class="form-label">Estado</label>
+                <select id="inputState" class="form-select">
+                  <option selected disabled>Escolha...</option>
+                  <option>Acre</option>
+                  <option>Alagoas</option>
+                  <option>Amapá</option>
+                  <option>Amazonas</option>
+                  <option>Bahia</option>
+                  <option>Ceará</option>
+                  <option>Distrito Federal</option>
+                  <option>Espírito Santo</option>
+                  <option>Goiás</option>
+                  <option>Maranhão</option>
+                  <option>Mato Grosso</option>
+                  <option>Mato Grosso do Sul</option>
+                  <option>Minas Gerais</option>
+                  <option>Pará</option>
+                  <option>Paraíba</option>
+                  <option>Paraná</option>
+                  <option>Pernambuco</option>
+                  <option>Piauí</option>
+                  <option>Rio de Janeiro</option>
+                  <option>Rio Grande do Norte</option>
+                  <option>Rio Grande do Sul</option>
+                  <option>Rondônia</option>
+                  <option>Roraima</option>
+                  <option>Santa Catarina</option>
+                  <option>São Paulo</option>
+                  <option>Sergipe</option>
+                  <option>Tocantins</option>
+              </select>
+                </select>
+              </div>
+              <div class="col-md-12">
+                <label for="inputZip" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                  Ao clicar, você esta de acordo com os nossos Termos de Uso e nossa
+                   Política de Privacidade do iFormal
+                  </label>
+                </div>
+              </div>
+              <br/>
+              <div class="col-12">
+                <div class="button text-center">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+              </div>
+              </div>
+            </form>
+            <br />
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Fim do Main     -->
+
+<!-- Inicio do Footer -->
+<footer class="py-5 container shadow-lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+        <div>
+          <h5>Serviços</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Assistencia Técnica</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Serviços Domésticos</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Moda e Beleza</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Reformas e Reparos</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Saúde</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Automóveis</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Eventos</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Consultoria</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Desing e Tecnologia</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Aulas e Reforços</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+        <div>
+          <h5>Institucional</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Quem somos</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Nossa visão</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Trabalhe Conosco</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Parceiros</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Juridico</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Comunidade iFormal</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Blog iFormal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+        <div>
+          <h5>Ajuda</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Perguntas Frequentes</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Termos de Uso</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Politica de Privacidade</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Mapa do Site</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Fale Conosco</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 downloads mt-3">
+        <h5>Downloads</h5>
+        <a href="#"><img src="src/img/google.png" alt="Disponível no Google Play" class="mb-3"></a>
+        <a href="#"><img src="src/img/apple.png" alt="Disponível na App Store" class="mb-3"></a>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>© 2023 Squad44, Inc. All rights reserved.</p>
+
+      <ul class="list-unstyled d-flex justify-content-center">
+        <li class="ms-3"><a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="ms-3"><a href="#">
+            <i class="fab fa-instagram mr-3"></i>
+          </a>
+        </li>
+        <li class="ms-3"><a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li class="ms-3"><a href="#">
+            <i class="fa-brands fa-youtube"></i>
+
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- Fim do Footer     -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"></script>
+<script src="src/js/index.js"></script>
+</body>
+
+</html>

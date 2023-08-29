@@ -2,496 +2,504 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/color_light.css" id="color-theme">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>iFormal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/color_light.css" id="color-theme">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>iFormal</title>
 </head>
 
 <body>
 
-    <header>
-        <!-- Inicio do NavaBar -->
-        <div id="nav-top">
-            <nav class="navbar navbar-expand-lg shadow position-absolute container-fluid z-3">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">iFormal</a>
+  <header>
+    <!-- Inicio do NavaBar -->
+    <div id="nav-top">
+      <nav class="navbar navbar-expand-lg shadow position-absolute container-fluid z-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">iFormal</a>
 
-                    <div class="btn-group mx-2 ms-auto" role="group" aria-label="Basic radio toggle button group"
-                        id="btnTema">
-                        <input type="radio" class="btn-check" name="btnradio" id="btnClaro" autocomplete="off">
-                        <label class="btn btn-outline-secondary" for="btnClaro">Claro</label>
-                        <input type="radio" class="btn-check" name="btnradio" id="btnEscuro" autocomplete="off">
-                        <label class="btn btn-outline-secondary" for="btnEscuro">Escuro</label>
-                    </div>
-
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation" id="toggleMenu">
-                        <div id="nav-icon1">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="login.html">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="servico.html">Serviços</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contato.html">Contato</a>
-                            </li>
-                        </ul>
-                    </div>
+          <div class="btn-group mx-2 ms-auto" role="group" aria-label="Basic radio toggle button group" id="btnTema">
+            <input type="radio" class="btn-check" name="btnradio" id="btnClaro" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="btnClaro">Claro</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnEscuro" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="btnEscuro">Escuro</label>
+          </div>
 
 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" id="toggleMenu">
+            <div id="nav-icon1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
 
-                </div>
-            </nav>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servico.html">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+
+
+
         </div>
-        <!-- Fim do NavaBar     -->
-        <!-- Hero -->
-        <div id="hero">
-            <p id="herotext">Encontre os melhores iFormais perto de você.</p>
+      </nav>
+    </div>
+    <!-- Fim do NavaBar     -->
+    <!-- Hero -->
+    <div id="hero">
+      <p id="herotext">Encontre os melhores iFormais perto de você.</p>
+    </div>
+    <!-- Fim do hero -->
+
+    <!-- Nav categorias -->
+    <nav>
+
+      <input class="show-more" type="checkbox" id="show-more">
+
+      <div class="container-fluid" id="categorias-servicos">
+        <ul>
+          <li tabindex="0">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <span>Assistencia Técnica</span>
+          </li>
+          <li tabindex="0">
+            <i class="fa-solid fa-house"></i>
+            <span>Serviços Domésticos</span>
+          </li>
+          <li tabindex="0">
+            <i class="fa-solid fa-shirt"></i>
+            <span>Moda e Beleza</span>
+          </li>
+          <li tabindex="0">
+            <i class="fa-solid fa-person-digging"></i>
+            <span>Reformas e Reparos</span>
+          </li>
+          <li tabindex="0">
+            <i class="fa-solid fa-heart-circle-plus"></i>
+            <span>Saúde</span>
+          </li>
+          <li tabindex="0">
+            <i class="fa-solid fa-car-side"></i>
+            <span>Automóveis</span>
+          </li>
+          <li tabindex="0">
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <span>Eventos</span>
+          </li>
+          <li tabindex="0">
+            <i class="fa-solid fa-person-chalkboard"></i>
+            <span>Consultoria</span>
+          </li>
+          <li tabindex="0">
+            <i class="fa-solid fa-computer"></i>
+            <span>Desing e Tecnologia</span>
+          </li>
+          <li tabindex="0">
+            <i class="fa-solid fa-book-open-reader"></i>
+            <span>Aulas e Reforços</span>
+          </li>
+          <li tabindex="0">
+            <i class="fa-solid fa-dog"></i>
+            <span>Pet Care</span>
+          </li>
+          </li>
+          <li tabindex="0">
+            <i class="fa-solid fa-hands-holding-child"></i>
+            <span>Day Care</span>
+          </li>
+        </ul>
+      </div>
+
+      <label class="show-more" for="show-more"> <span><i class="fa-solid fa-circle-plus"></i></span></label>
+      <label class="show-less" for="show-more"> <span><i class="fa-solid fa-circle-minus"></i></span></label>
+
+
+    </nav>
+    <!-- Fim Nav categorias -->
+
+
+  </header>
+
+  <!-- Inicio do Main -->
+  <main class="container my-5">
+
+    <!-- card carroussel -->
+    <div id="carouselExampleIndicators" class="carousel slide container">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card mb-3">
+            <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+              <a href="#" class="btn">Button</a>
+            </div>
+          </div>
         </div>
-        <!-- Fim do hero -->
-
-        <!-- Nav categorias -->
-        <nav>
-
-            <input class="show-more" type="checkbox" id="show-more">
-
-            <div class="container-fluid" id="categorias-servicos">
-                <ul>
-                    <li tabindex="0">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                        <span>Assistencia Técnica</span>
-                    </li>
-                    <li tabindex="0">
-                        <i class="fa-solid fa-house"></i>
-                        <span>Serviços Domésticos</span>
-                    </li>
-                    <li tabindex="0">
-                        <i class="fa-solid fa-shirt"></i>
-                        <span>Moda e Beleza</span>
-                    </li>
-                    <li tabindex="0">
-                        <i class="fa-solid fa-person-digging"></i>
-                        <span>Reformas e Reparos</span>
-                    </li>
-                    <li tabindex="0">
-                        <i class="fa-solid fa-heart-circle-plus"></i>
-                        <span>Saúde</span>
-                    </li>
-                    <li tabindex="0">
-                        <i class="fa-solid fa-car-side"></i>
-                        <span>Automóveis</span>
-                    </li>
-                    <li tabindex="0">
-                        <i class="fa-solid fa-champagne-glasses"></i>
-                        <span>Eventos</span>
-                    </li>
-                    <li tabindex="0">
-                        <i class="fa-solid fa-person-chalkboard"></i>
-                        <span>Consultoria</span>
-                    </li>
-                    <li tabindex="0">
-                        <i class="fa-solid fa-computer"></i>
-                        <span>Desing e Tecnologia</span>
-                    </li>
-                    <li tabindex="0">
-                        <i class="fa-solid fa-book-open-reader"></i>
-                        <span>Aulas e Reforços</span>
-                    </li>
-                    <li tabindex="0">
-                        <i class="fa-solid fa-dog"></i>
-                        <span>Pet Care</span>
-                    </li>
-                    </li>
-                    <li tabindex="0">
-                        <i class="fa-solid fa-hands-holding-child"></i>
-                        <span>Day Care</span>
-                    </li>
-                </ul>
+        <div class="carousel-item">
+          <div class="card mb-3">
+            <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+              <a href="#" class="btn">Button</a>
             </div>
-
-            <label class="show-more" for="show-more"> <span><i class="fa-solid fa-circle-plus"></i></span></label>
-            <label class="show-less" for="show-more"> <span><i class="fa-solid fa-circle-minus"></i></span></label>
-
-
-        </nav>
-        <!-- Fim Nav categorias -->
-
-
-    </header>
-
-    <!-- Inicio do Main -->
-    <main class="container mt-5">
-
-        <!-- card carroussel -->
-        <div id="carouselExampleIndicators" class="carousel slide container">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card mb-3">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                            <a href="#" class="btn">Button</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card mb-3">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                            <a href="#" class="btn">Button</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card mb-3">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                            <a href="#" class="btn">Button</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          </div>
         </div>
-        <!-- fim do carrossel -->
-
-        <!-- Quotes -->
-        <section class="container">
-
-            <h5 class="py-3">Comentarios de nosso clientes</h5>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
-                <div class="col">
-                    <div class="citacao">
-                        <span><i class="fa-solid fa-quote-left"></i></span>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
-                            inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
-                        <p><small><a href="#">Nome do Autor</a></small></p>
-                        <span><i class="fa-solid fa-quote-right"></i></span>
-                    </div>
-                </div>
-                
-                <div class="col">
-                    <div class="citacao">
-                        <span><i class="fa-solid fa-quote-left"></i></span>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
-                            inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
-                        <p><small><a href="#">Nome do Autor</a></small></p>
-                        <span><i class="fa-solid fa-quote-right"></i></span>
-                    </div>
-                </div>
-                
-                <div class="col">
-                    <div class="citacao">
-                        <span><i class="fa-solid fa-quote-left"></i></span>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
-                            inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
-                        <p><small><a href="#">Nome do Autor</a></small></p>
-                        <span><i class="fa-solid fa-quote-right"></i></span>
-                    </div>
-                </div>
-                
-                <div class="col">
-                    <div class="citacao">
-                        <span><i class="fa-solid fa-quote-left"></i></span>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
-                            inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
-                        <p><small><a href="#">Nome do Autor</a></small></p>
-                        <span><i class="fa-solid fa-quote-right"></i></span>
-                    </div>
-                </div>
-                
-                <div class="col">
-                    <div class="citacao">
-                        <span><i class="fa-solid fa-quote-left"></i></span>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
-                            inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
-                        <p><small><a href="#">Nome do Autor</a></small></p>
-                        <span><i class="fa-solid fa-quote-right"></i></span>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="citacao">
-                        <span><i class="fa-solid fa-quote-left"></i></span>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
-                            inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
-                        <p><small><a href="#">Nome do Autor</a></small></p>
-                        <span><i class="fa-solid fa-quote-right"></i></span>
-                    </div>
-                </div>
-
+        <div class="carousel-item">
+          <div class="card mb-3">
+            <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+              <a href="#" class="btn">Button</a>
             </div>
-
-            
-
-        </section>
-        <!-- Fim quotes -->
-
-        <!-- artigos -->
-        <section>
-            <h5 class="py-3">Ultimos artigos</h5>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus. Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
-                            </div>
-                            <p class="text-end p-1"> <a href="#">Leia mais...</a></p>
-                        <div class="card-footer">
-                            <small>Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus. Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
-                            </div>
-                            <p class="text-end p-1"> <a href="#">Leia mais...</a></p>
-                        <div class="card-footer">
-                            <small>Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus. Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
-                            </div>
-                            <p class="text-end p-1"> <a href="#">Leia mais...</a></p>
-                        <div class="card-footer">
-                            <small>Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus. Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
-                            </div>
-                            <p class="text-end p-1"> <a href="#">Leia mais...</a></p>
-                        <div class="card-footer">
-                            <small>Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates ipsa maiores dolorum earum natus, soluta, veniam similique illo dolores, doloribus architecto delectus. Consequatur, dolore est.</p>
-                            </div>
-                            <p class="text-end p-1"><a  href="#">Leia mais...</a></p>
-                        <div class="card-footer">
-                            <small>Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="src/img/hero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatum corporis fuga repellendus consequatur veritatis amet beatae ea voluptate, dolore officiis et dolor. Quia totam nam eos ea, iste fuga.</p>
-                            </div>
-                            <p class="text-end">
-                                <a href="#">Leia mais...</a></p>
-                        <div class="card-footer">
-                            <small>Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
-        <!-- fim artigos -->
-
-    </main>
-    <!-- Fim do Main     -->
-
-    <!-- Inicio do Footer -->
-    <footer class="py-5 container">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
-                    <div>
-                        <h5>Serviços</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Assistencia Técnica</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Serviços Domésticos</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Moda e Beleza</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Reformas e Reparos</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Saúde</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Automóveis</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Eventos</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Consultoria</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Desing e Tecnologia</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Aulas e Reforços</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
-                    <div>
-                        <h5>Institucional</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Quem somos</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Nossa visão</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Trabalhe Conosco</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Parceiros</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Juridico</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Comunidade iFormal</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Blog iFormal</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
-                    <div>
-                        <h5>Ajuda</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Perguntas Frequentes</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Termos de Uso</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Politica de Privacidade</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Mapa do Site</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Fale Conosco</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 downloads mt-3">
-                    <h5>Downloads</h5>
-                    <a href="#"><img src="src/img/google.png" alt="Disponível no Google Play" class="mb-3"></a>
-                    <a href="#"><img src="src/img/apple.png" alt="Disponível na App Store" class="mb-3"></a>
-                </div>
-            </div>
-
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <p>© 2023 Squad44, Inc. All rights reserved.</p>
-
-                <ul class="list-unstyled d-flex justify-content-center">
-                    <li class="ms-3"><a href="#">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="ms-3"><a href="#">
-                            <i class="fab fa-instagram mr-3"></i>
-                        </a>
-                    </li>
-                    <li class="ms-3"><a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="ms-3"><a href="#">
-                            <i class="fa-brands fa-youtube"></i>
-
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
+          </div>
         </div>
-    </footer>
-    <!-- Fim do Footer     -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- fim do carrossel -->
+
+    <!-- Quotes -->
+    <section class="container">
+
+      <h5 class="py-3">Comentarios de nosso clientes</h5>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        <div class="col">
+          <div class="citacao">
+            <span><i class="fa-solid fa-quote-left"></i></span>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
+              inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
+            <p><small><a href="#">Nome do Autor</a></small></p>
+            <span><i class="fa-solid fa-quote-right"></i></span>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="citacao">
+            <span><i class="fa-solid fa-quote-left"></i></span>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
+              inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
+            <p><small><a href="#">Nome do Autor</a></small></p>
+            <span><i class="fa-solid fa-quote-right"></i></span>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="citacao">
+            <span><i class="fa-solid fa-quote-left"></i></span>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
+              inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
+            <p><small><a href="#">Nome do Autor</a></small></p>
+            <span><i class="fa-solid fa-quote-right"></i></span>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="citacao">
+            <span><i class="fa-solid fa-quote-left"></i></span>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
+              inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
+            <p><small><a href="#">Nome do Autor</a></small></p>
+            <span><i class="fa-solid fa-quote-right"></i></span>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="citacao">
+            <span><i class="fa-solid fa-quote-left"></i></span>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
+              inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
+            <p><small><a href="#">Nome do Autor</a></small></p>
+            <span><i class="fa-solid fa-quote-right"></i></span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="citacao">
+            <span><i class="fa-solid fa-quote-left"></i></span>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus tempora laboriosam, ex
+              inventore assumenda? Veniam non exercitationem repudiandae perspiciatis?</p>
+            <p><small><a href="#">Nome do Autor</a></small></p>
+            <span><i class="fa-solid fa-quote-right"></i></span>
+          </div>
+        </div>
+
+      </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-    <script src="src/js/index.js"></script>
+
+    </section>
+    <!-- Fim quotes -->
+
+    <!-- artigos -->
+    <section>
+      <h5 class="py-3">Ultimos artigos</h5>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus.
+                Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
+            </div>
+            <p class="text-end p-1"> <a href="#">Leia mais...</a></p>
+            <div class="card-footer">
+              <small>Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus.
+                Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
+            </div>
+            <p class="text-end p-1"> <a href="#">Leia mais...</a></p>
+            <div class="card-footer">
+              <small>Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus.
+                Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
+            </div>
+            <p class="text-end p-1"> <a href="#">Leia mais...</a></p>
+            <div class="card-footer">
+              <small>Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia facere minus.
+                Qui consequatur accusantium modi suscipit praesentium architecto inventore iure ea aliquam!</p>
+            </div>
+            <p class="text-end p-1"> <a href="#">Leia mais...</a></p>
+            <div class="card-footer">
+              <small>Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates ipsa maiores
+                dolorum earum natus, soluta, veniam similique illo dolores, doloribus architecto delectus. Consequatur,
+                dolore est.</p>
+            </div>
+            <p class="text-end p-1"><a href="#">Leia mais...</a></p>
+            <div class="card-footer">
+              <small>Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="src/img/hero.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatum
+                corporis fuga repellendus consequatur veritatis amet beatae ea voluptate, dolore officiis et dolor. Quia
+                totam nam eos ea, iste fuga.</p>
+            </div>
+            <p class="text-end">
+              <a href="#">Leia mais...</a>
+            </p>
+            <div class="card-footer">
+              <small>Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <!-- fim artigos -->
+
+  </main>
+  <!-- Fim do Main     -->
+
+  <!-- Inicio do Footer -->
+  <footer class="py-5 container-fluid shadow-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+          <div>
+            <h5>Serviços</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Assistencia Técnica</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Serviços Domésticos</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Moda e Beleza</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Reformas e Reparos</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Saúde</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Automóveis</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Eventos</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Consultoria</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Desing e Tecnologia</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Aulas e Reforços</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+          <div>
+            <h5>Institucional</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Quem somos</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Nossa visão</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Trabalhe Conosco</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Parceiros</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Juridico</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Comunidade iFormal</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Blog iFormal</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+          <div>
+            <h5>Ajuda</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Perguntas Frequentes</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Termos de Uso</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Politica de Privacidade</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Mapa do Site</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Fale Conosco</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 downloads mt-3">
+          <h5>Downloads</h5>
+          <a href="#"><img src="src/img/google.png" alt="Disponível no Google Play" class="mb-3"></a>
+          <a href="#"><img src="src/img/apple.png" alt="Disponível na App Store" class="mb-3"></a>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2023 Squad44, Inc. All rights reserved.</p>
+
+        <ul class="list-unstyled d-flex justify-content-center">
+          <li class="ms-3"><a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="ms-3"><a href="#">
+              <i class="fab fa-instagram mr-3"></i>
+            </a>
+          </li>
+          <li class="ms-3"><a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="ms-3"><a href="#">
+              <i class="fa-brands fa-youtube"></i>
+
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- Fim do Footer     -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="src/js/index.js"></script>
 </body>
 
 </html>

@@ -339,11 +339,6 @@ a.btn {
     transform: rotate(-135deg);
 }
 
-
-
-
-
-
 .breadcrumb-item::before{
     
     color: var(--cor-texto) !important;
@@ -354,3 +349,42 @@ a.btn {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
 }
+
+/* Inicio do CSS dos formulários */
+
+
+.cardconfig {
+  display: flex;
+  align-content: center;
+  margin: 2rem auto;
+  border: none; 
+  background-color: var(--cor-fundo-destaque-claro); 
+  height: fit-content;
+
+}
+
+.list-group-item img {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+}
+.list-group-item img + h5 {
+  display: inline-block;
+}
+
+.list-group-item{
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+.form-control {
+  background-color: transparent !important;
+}
+
+ul div.row {
+  padding: 1rem .5rem;
+}
+
+
+
