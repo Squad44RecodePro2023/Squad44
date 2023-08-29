@@ -1,85 +1,391 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css');
+
+* {
+
+    transition: background-color .5s;
+}
+
 body {
-  background: var(--cor-fundo);
-  color: var(--cor-texto);
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
 }
+
+.navbar-toggler {
+    border-color: var(--cor-texto-alternativo);
+    color: var(--cor-secundaria);
+}
+
 a {
-  color: var(--cor-texto) !important;
+    color: var(--cor-texto) !important;
+    transition: color 0.5s !important;
+    text-decoration: none;
 }
+
+a:hover {
+    color: var(--cor-destaque) !important;
+}
+
 .active {
-  font-weight: 900;
-  color: var(--cor-texto-alternativo) !important;
+    font-weight: 900;
+    color: var(--cor-texto-alternativo) !important;
 }
+
 .disabled {
-  opacity: 0.5 !important;
+    opacity: 0.5 !important;
 }
+
 footer i {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
-footer .downloads a > img {
-  width: 200px;
-}
-/* Inicio do CSS da Page Contato */
-
-#linktermos {
-  color: blue;
-  text-decoration: none;
+footer .downloads a>img {
+    width: 200px;
 }
 
-#contatoresponsividade {
-  overflow: hidden;
-  background: white;
-  border: none;
+
+footer .row>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#formulariocontato1 {
-  border: none;
-  align-items: center;
+
+#btnTema {
+    position: absolute;
+    right: 1rem;
+    top: .6rem;
 }
 
-#formulariocontato2 {
-  border: none;
-  margin-left: 11%;
-  margin-right: 11%;
+@media screen and (max-width: 1000px) {
+    #btnTema {
+        position: absolute;
+        right: 4rem;
+    }
 }
 
-#exampleFormControlInput1 {
+#hero {
+    height: 35vh;
+    background: url('../img/hero.jpg') var(--cor-destaque) center / contain repeat-x;
+    display: flex;
+    justify-content: right;
+    /* align-items: center; */
+    padding: 1rem;
 }
-/* Fim do CSS da Page Contato */
 
-/* Inicio do CSS da Page Login */
-#background {
-  height: 32em;
-  background: white;
+#herotext {
+    text-shadow:
+        2px 2px 3px #fff,
+        -2px -2px 3px #fff,
+        -2px 2px 3px #fff,
+        -2px -2px 3px #fff,
+        2px 0px 3px #fff,
+        0px 2px 3px #fff,
+        -2px 0px 3px #fff,
+        0px -2px 3px #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
 }
 
-#cardconfig {
+@media screen and (max-width: 600px) {
+    #hero {
+        background: url('../img/hero.jpg') var(--cor-destaque) center / cover repeat-x;
+    }
+
+    #herotext {
+        font-size: 1.5rem;
+    }
+}
+
+#nav-top {
+    min-height: 3.5rem;
+}
+
+nav {
+    background-color: var(--cor-fundo);
+}
+
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Nav Categoria de Serviços*/
+#categorias-servicos {
+    overflow: hidden;
+    height: 7rem;
+}
+
+.show-more {
+    display: none;
+}
+
+input.show-more {
+    display: none;
+}
+
+.show-less {
+    display: none;
+}
+
+@media screen and (max-width: 1479px) {
+    .show-more {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    label span {
+        cursor: pointer;
+    }
+
+    label span:hover {
+        color: var(--cor-destaque);
+    }
+
+    input.show-more:checked+#categorias-servicos {
+        height: auto;
+    }
+
+    input.show-more:checked~label.show-more {
+        display: none;
+    }
+
+    input.show-more:checked~label.show-less {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+}
+
+#categorias-servicos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#categorias-servicos li {
+    display: flex;
+    padding: .5rem;
+    text-align: center;
+    border: 1px solid var(--cor-destaque);
+    border-radius: .5rem;
+    margin: .5rem;
+    width: 8rem;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#categorias-servicos li:hover,
+#categorias-servicos li:focus {
+    content: '';
+    background-color: var(--cor-secundaria);
+    color: var(--cor-destaque);
+    border-width: 3px;
+}
+
+#categorias-servicos li i {
+    font-size: 2rem;
+}
+
+/* Card carrossel*/
+#carouselExampleIndicators {
+    margin-top: 2rem;
+}
+
+.card {
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    border-color: var(--cor-texto-alternativo0.5);
+}
+
+#carouselExampleIndicators .card-img-top {
+    height: 30rem;
+    object-fit: cover;
+}
+
+.card small {
+    opacity: .7;
+}
+
+a.btn {
+    background-color: var(--cor-secundaria);
+}
+
+
+/* citações*/
+.comentarios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.citacao {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--cor-fundo-destaque);
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.citacao p {
+    text-align: justify;
+}
+
+.citacao div.star {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+
+}
+
+.citacao span {
+    font-size: 3rem;
+    position: absolute;
+}
+
+.citacao span:first-of-type {
+    top: 0;
+    left: 1rem;
+}
+
+.citacao span:last-of-type {
+    right: 1rem;
+    bottom: 0;
+}
+
+.card a {
+    color: var(--cor-texto-alternativo) !important;
+}
+.card a:hover {
+    color: var(--cor-destaque) !important;
+}
+
+
+/* Menu hamburger Personalizado */
+
+#nav-icon1 {
+    width: 1.6rem;
+    height: 1.6rem;
+    position: relative;
+    margin: 0.1rem auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: .15rem;
+    width: 100%;
+    background: var(--cor-texto);
+    border-radius: .5rem;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+    top: 0.2rem;
+}
+
+#nav-icon1 span:nth-child(2) {
+    top: 0.7rem;
+}
+
+#nav-icon1 span:nth-child(3) {
+    top: 1.2rem;
+}
+
+#nav-icon1.open span:nth-child(1) {
+    top: .7rem;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -1rem;
+}
+
+#nav-icon1.open span:nth-child(3) {
+    top: 0.7rem;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.breadcrumb-item::before{
+    
+    color: var(--cor-texto) !important;
+    opacity: 0.7;
+}
+
+.list-group-item {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* Inicio do CSS dos formulários */
+
+
+.cardconfig {
   display: flex;
   align-content: center;
-  border: none;
-  background: white;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 2rem auto;
+  border: none; 
+  background-color: var(--cor-fundo-destaque-claro); 
+  height: fit-content;
+
 }
 
-/* Fim do CSS da Page Login */
-
-/* Inicio do CSS da Page CADASTRO */
-#background2 {
-  background: white;
+.list-group-item img {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+}
+.list-group-item img + h5 {
+  display: inline-block;
 }
 
-#cardconfig2 {
-  display: flex;
-  align-content: center;
-  border: none;
-  background: white;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -3%;
-  margin-bottom: auto;
+.list-group-item{
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
 }
 
-/* Fim do CSS da Page CADASTRO */
+.form-control {
+  background-color: transparent !important;
+}
+
+ul div.row {
+  padding: 1rem .5rem;
+}
+
+
+
