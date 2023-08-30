@@ -48,4 +48,4 @@ Nosso app espera ter um impacto positivo nas seguintes áreas:
 
 O projeto final do Squad44 é um projeto importante que visa atender à proposta da ONU- ODS 8 (Trabalho digno e desenvolvimento econômico), focada na empregabilidade e geração de renda para pessoas carentes. O projeto tem potencial de ter um impacto positivo na vida de muitas pessoas. Estaremos fomentando o comercio local, incentivando o crescimento financeiro e promovendo uma maior integração ativa da comunidade na sociedade.
 
-![Imagem do Projeto](linkimg)
+![Imagem do Projeto](./src/img/imagem-projeto.png)
