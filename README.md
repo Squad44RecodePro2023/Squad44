@@ -39,6 +39,7 @@ Inclusão social: O projeto busca promover a inclusão social de pessoas carente
 Qualidade de vida: O projeto visa melhorar a qualidade de vida de pessoas carentes.
 Economia local: O projeto contribui diretamente com a economia local, conectando as profissões mais comuns em uma comunidade urbana com as necessidades dos moradores e dos comerciantes.
 Inclusão e igualdade de gênero: O projeto também permite que as mulheres tenham oportunidades de trabalho e empreendedorismo, dentro de sua própria comunidade, promovendo a equidade e o empoderamento feminino.
+
 Conclusão 🎉
 
 O projeto final do Squad44 é um projeto importante que visa atender à proposta da ONU- ODS 8 (Trabalho digno e desenvolvimento econômico), focada na empregabilidade e geração de renda para pessoas carentes. O projeto tem potencial de ter um impacto positivo na vida de muitas pessoas. Estaremos fomentando o comercio local, incentivando o crescimento financeiro e promovendo uma maior integração ativa da comunidade na sociedade.
