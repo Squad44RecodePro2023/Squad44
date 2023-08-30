@@ -2,6 +2,7 @@
 Repositório oficial do projeto do Squad44, RecodePro 2023
 
 **Descrição** 📋
+
 O projeto final do Squad44 é um protótipo de um aplicativo para trabalhadores informais, uma espécie de Uber dos pequenos serviços como diaristas, babás, esteticistas, cabeleireiros, maridos de aluguel, pedreiros, encanadores, etc. O aplicativo visa atender à proposta da ONU- ODS 8 - (Trabalho digno e desenvolvimento econômico) focada na empregabilidade e geração de renda para pessoas carentes.
 
 **Objetivos iniciais** 🎯
@@ -24,7 +25,7 @@ Além dos objetivos iniciais, o projeto também irá pesquisar e implantar os se
 4. Desenvolver um sistema de suporte ao cliente eficiente.
 5. Realizar pesquisas de satisfação com os usuários.
 
-Equipe
+Equipe 🤜🤛
 - [Ilnara Ackermann](https://github.com/ilnaraackermann)
 - [Greiciele Cristina Vieira dos Santos](https://github.com/GreicyVieira)
 - [Jéssika Haber](https://github.com/jessikahaber)
