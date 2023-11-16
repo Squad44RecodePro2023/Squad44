@@ -1,14 +1,40 @@
 package com.example.iformal.model;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 /**
  * Representa um serviço oferecido pelo sistema.
  * 
- * Esta classe modela os serviços disponíveis para agendamento, contendo informações
+ * Esta classe modela os serviços disponíveis para agendamento, contendo
+ * informações
  * como nome e descrição.
  */
+@Entity
+@Table(name = "servicos")
 public class Servicos {
 
+    /**
+     * Chave primária que identifica exclusivamente cada serviço no sistema.
+     */
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    /**
+     * Nome do serviço.
+     */
+    @Column(nullable = false)
     private String nome;
+
+    /**
+     * Descrição do serviço
+     */
+    @Column(columnDefinition = "TEXT")
     private String descricao;
 
     /**
