@@ -14,6 +14,9 @@ import org.springframework.web.servlet.ModelAndView;
 import com.example.iformal.model.Usuario;
 import com.example.iformal.repository.UsuarioRepository;
 
+/**
+ * Controlador para lidar com operações relacionadas aos usuários.
+ */
 @Controller
 @RequestMapping("/usuario")
 public class UsuarioController {
@@ -21,6 +24,11 @@ public class UsuarioController {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
+    /**
+     * Lista todos os usuários.
+     *
+     * @return ModelAndView contendo a lista de usuários
+     */
     @GetMapping
     public ModelAndView listar() {
         ModelAndView modelAndView = new ModelAndView("usuario/listar.html");
@@ -30,6 +38,11 @@ public class UsuarioController {
         return modelAndView;
     }
 
+    /**
+     * Exibe o formulário de cadastro de usuário.
+     *
+     * @return ModelAndView para o formulário de cadastro
+     */
     @GetMapping("/cadastrar")
     public ModelAndView exibirFormularioCadastro() {
         ModelAndView modelAndView = new ModelAndView("usuario/cadastrar");
@@ -37,6 +50,12 @@ public class UsuarioController {
         return modelAndView;
     }
 
+    /**
+     * Cadastra um novo usuário.
+     *
+     * @param usuario O usuário a ser cadastrado
+     * @return ModelAndView redirecionando para a lista de usuários após o cadastro
+     */
     @PostMapping("/cadastrar")
     public ModelAndView cadastrarNovoUsuario(@ModelAttribute("usuario") Usuario usuario) {
         ModelAndView modelAndView = new ModelAndView();
@@ -45,6 +64,12 @@ public class UsuarioController {
         return modelAndView;
     }
 
+    /**
+     * Exibe o formulário para editar um usuario existente.
+     * 
+     * @param id O ID do usuario a ser editado.
+     * @return ModelAndView contendo o formulário de edição.
+     */
     @GetMapping("/{id}/editar")
     public ModelAndView editar(@PathVariable Integer id) {
         ModelAndView modelAndView = new ModelAndView("usuario/editar.html");
@@ -53,6 +78,12 @@ public class UsuarioController {
         return modelAndView;
     }
 
+    /**
+     * Salva as alterações feitas em um usuario existente.
+     * 
+     * @param servicos O usuario com as alterações feitas.
+     * @return ModelAndView redirecionando para a lista de usuario após a edição.
+     */
     @PostMapping("/{id}/editar")
     public ModelAndView editar(Usuario usuario) {
         usuarioRepository.save(usuario);
@@ -61,6 +92,12 @@ public class UsuarioController {
         return modelAndView;
     }
 
+    /**
+     * Exclui um serviço existente.
+     * 
+     * @param id O ID do usuario a ser excluído.
+     * @return ModelAndView redirecionando para a lista de usuario após a exclusão.
+     */
     @GetMapping("/{id}/excluir")
     public ModelAndView excluir(@PathVariable Integer id) {
         ModelAndView modelAndView = new ModelAndView("redirect:/usuario");
