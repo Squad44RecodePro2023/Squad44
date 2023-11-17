@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuário</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+  <main class="container mt-5">
+    <div class="row">
+			<div class="col-sm-12">
+				<h1>Listagem de Usuários</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Nome</th>
+							<th scope="col">Descrição</th>
+							<th scope="col">Ações</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="servicos : ${servicoss}">
+							<th scope="row" th:text="${servicos.id}"></th>
+							<td>
+								<a th:text="${servicos.nome}" th:href="@{/servicos/{id} (id=${servicos.id})}"></a>
+							</td>
+							<td th:text="${servicos.descricao}"></td>
+							<td>
+								<a th:href="@{/servicos/{id}/editar (id=${servicos.id})}" class="btn btn-warning">
+									Editar
+								</a>
+								<a th:href="@{/servicos/{id}/excluir (id=${servicos.id})}" class="btn btn-danger"
+									onclick="return confirm('Tem certeza que deseja excluir o cliente?');">
+									Excluir
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<a th:href="@{/servicos/cadastrar}" class="btn btn-primary">Cadastrar novo Cliente</a>
+			</div>
+		</div>
+  </main>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

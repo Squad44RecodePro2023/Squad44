@@ -23,6 +23,7 @@ public class Servicos {
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_servico")
     private int id;
 
     /**
