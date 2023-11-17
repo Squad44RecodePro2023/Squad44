@@ -14,6 +14,11 @@ import org.springframework.web.servlet.ModelAndView;
 import com.example.iformal.model.Servicos;
 import com.example.iformal.repository.ServicosRepository;
 
+/**
+ * Controlador para lidar com operações relacionadas aos serviços.
+ * Responsável por listar, cadastrar, editar e excluir serviços.
+ */
+
 @Controller
 @RequestMapping("/servicos")
 public class ServicosController {
@@ -21,6 +26,11 @@ public class ServicosController {
     @Autowired
     private ServicosRepository servicosRepository;
 
+    /**
+     * Lista todos os serviços existentes.
+     * 
+     * @return ModelAndView contendo a página de listagem dos serviços.
+     */
     @GetMapping
     public ModelAndView listar() {
         ModelAndView modelAndView = new ModelAndView("servicos/listar.html");
@@ -30,6 +40,11 @@ public class ServicosController {
         return modelAndView;
     }
 
+    /**
+     * Exibe o formulário para cadastrar um novo serviço.
+     * 
+     * @return ModelAndView contendo o formulário de cadastro.
+     */
     @GetMapping("/cadastrar")
     public ModelAndView exibirFormularioCadastro() {
         ModelAndView modelAndView = new ModelAndView("servicos/cadastrar");
@@ -37,6 +52,12 @@ public class ServicosController {
         return modelAndView;
     }
 
+    /**
+     * Cadastra um novo serviço.
+     * 
+     * @param servicos O serviço a ser cadastrado.
+     * @return ModelAndView redirecionando para a lista de serviços após o cadastro.
+     */
     @PostMapping("/cadastrar")
     public ModelAndView cadastrarNovoservicos(@ModelAttribute("servicos") Servicos servicos) {
         ModelAndView modelAndView = new ModelAndView();
@@ -45,6 +66,12 @@ public class ServicosController {
         return modelAndView;
     }
 
+    /**
+     * Exibe o formulário para editar um serviço existente.
+     * 
+     * @param id O ID do serviço a ser editado.
+     * @return ModelAndView contendo o formulário de edição.
+     */
     @GetMapping("/{id}/editar")
     public ModelAndView editar(@PathVariable Integer id) {
         ModelAndView modelAndView = new ModelAndView("servicos/editar.html");
@@ -53,6 +80,12 @@ public class ServicosController {
         return modelAndView;
     }
 
+    /**
+     * Salva as alterações feitas em um serviço existente.
+     * 
+     * @param servicos O serviço com as alterações feitas.
+     * @return ModelAndView redirecionando para a lista de serviços após a edição.
+     */
     @PostMapping("/{id}/editar")
     public ModelAndView editar(Servicos servicos) {
         servicosRepository.save(servicos);
@@ -61,6 +94,12 @@ public class ServicosController {
         return modelAndView;
     }
 
+    /**
+     * Exclui um serviço existente.
+     * 
+     * @param id O ID do serviço a ser excluído.
+     * @return ModelAndView redirecionando para a lista de serviços após a exclusão.
+     */
     @GetMapping("/{id}/excluir")
     public ModelAndView excluir(@PathVariable Integer id) {
         ModelAndView modelAndView = new ModelAndView("redirect:/servicos");
