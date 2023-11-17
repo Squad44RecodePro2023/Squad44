@@ -54,6 +54,7 @@ public class Usuario {
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_usuario")
     private int id;
 
     /**

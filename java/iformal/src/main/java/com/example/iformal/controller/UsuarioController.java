@@ -5,7 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -21,23 +23,31 @@ public class UsuarioController {
 
     @GetMapping
     public ModelAndView listar() {
-        ModelAndView modelAndView = new ModelAndView();
+        ModelAndView modelAndView = new ModelAndView("usuario/listar.html");
+
         List<Usuario> usuarios = usuarioRepository.findAll();
         modelAndView.addObject("usuarios", usuarios);
         return modelAndView;
     }
 
     @GetMapping("/cadastrar")
-    public ModelAndView cadastrar(Usuario usuario) {
-        ModelAndView modelAndView = new ModelAndView("redirect:/usuario");
-        usuarioRepository.save(usuario);
+    public ModelAndView exibirFormularioCadastro() {
+        ModelAndView modelAndView = new ModelAndView("usuario/cadastrar");
+        modelAndView.addObject("usuario", new Usuario());
         return modelAndView;
+    }
 
+    @PostMapping("/cadastrar")
+    public ModelAndView cadastrarNovoUsuario(@ModelAttribute("usuario") Usuario usuario) {
+        ModelAndView modelAndView = new ModelAndView();
+        usuarioRepository.save(usuario);
+        modelAndView.setViewName("redirect:/usuario");
+        return modelAndView;
     }
 
     @GetMapping("/{id}/editar")
     public ModelAndView editar(@PathVariable Integer id) {
-        ModelAndView modelAndView = new ModelAndView("redirect:/edicao");
+        ModelAndView modelAndView = new ModelAndView("usuario/editar");
         Usuario usuario = usuarioRepository.getReferenceById(id);
         modelAndView.addObject("usuario", usuario);
         return modelAndView;
@@ -45,7 +55,7 @@ public class UsuarioController {
 
     @GetMapping("/{id}/excluir")
     public ModelAndView excluir(@PathVariable Integer id) {
-        ModelAndView modelAndView = new ModelAndView("redirect:/usuario");
+        ModelAndView modelAndView = new ModelAndView("usuario/excluir");
         usuarioRepository.deleteById(id);
         return modelAndView;
     }
