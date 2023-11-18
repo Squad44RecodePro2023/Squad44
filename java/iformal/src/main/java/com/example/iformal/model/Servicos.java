@@ -35,7 +35,7 @@ public class Servicos {
     /**
      * Descrição do serviço
      */
-    @Column(columnDefinition = "TEXT")
+    @Column(nullable = false)
     private String descricao;
 
     /**
