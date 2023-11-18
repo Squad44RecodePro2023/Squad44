@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuário</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+  <main class="container mt-5">
+    <h1>Cadastro de Agendamento</h1>
+    <form method="POST" th:object="${agendamentos}">
+      
+      <div class="mb-3">
+        <label for="Usuario" class="form-label">Usuario</label>
+        <input type="text" class="form-control" id="Usuario" th:field="*{usuario.id}" required>
+      </div>    
+
+      <div class="mb-3">
+        <label for="servico" class="form-label">Servico</label>
+        <input type="text" class="form-control" id="servico" th:field="*{servico.id}" required>
+      </div>    
+      
+      <div class="mb-3">
+        <label for="data_servico" class="form-label">Data</label>
+        <input type="date" class="form-control" id="data_servico" th:field="*{data_servico}" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="observacao" class="form-label">Observacao</label>
+        <input type="text" class="form-control" id="observacao" th:field="*{observacao}" required>
+      </div> 
+
+      <div class="mb-3">
+        <label for="preco" class="form-label">Valor</label>
+        <input type="text" class="form-control" id="preco" th:field="*{preco}" pattern="[0-9]+([.][0-9]+)?" oninput="this.value = this.value.replace(/[^0-9.]/g, '');" required>
+      </div> 
+      
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+  </main>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

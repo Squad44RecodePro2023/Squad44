@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -58,27 +59,28 @@ import jakarta.persistence.Table;
  * @author Squad 44 - Ilnara Ackermann
  */
 @Entity
-@Table(name = "servicos")
+@Table(name = "agendamentos")
 public class Agendamentos {
     /**
      * Chave primária que identifica exclusivamente cada agendamento no sistema.
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_agendamento")
     private int id;
 
     /**
      * Usuário associado ao agendamento.
      */
     @ManyToOne
-    @JoinColumn(name = "usuario_id", nullable = false)
+    @JoinColumn(name = "id_usuario")
     private Usuario usuario;
 
     /**
      * Serviço agendado.
      */
     @ManyToOne
-    @JoinColumn(name = "servico_id", nullable = false)
+    @JoinColumn(name = "id_servico")
     private Servicos servico;
 
     /**
@@ -90,6 +92,8 @@ public class Agendamentos {
     /**
      * Observações adicionais sobre o serviço agendado.
      */
+
+    @Column(name = "observacoes", columnDefinition = "TEXT")
     private String observacao;
 
     /**

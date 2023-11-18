@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-header">
+        Informações do Usuário
+    </div>
+    <div class="card-body">
+        <h5 class="card-title" th:text="${usuario.name}"></h5>
+        <p class="card-text">
+            E-mail: <span th:text="${usuario.email}"></span><br>
+            Telefone: <span th:text="${usuario.telefone}"></span><br>
+            Endereço: <span th:text="${usuario.endereco}"></span><br>
+            <!-- Adicione outros atributos do usuário conforme necessário -->
+        </p>
+        <a href="#" class="btn btn-primary">Ver perfil completo</a>
+    </div>
+</div>
