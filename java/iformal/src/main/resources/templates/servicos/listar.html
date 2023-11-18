@@ -30,8 +30,7 @@
 					<tbody>
 						<tr th:each="servicos : ${servicoss}">
 							<th scope="row" th:text="${servicos.id}"></th>
-							<td>
-								<a th:text="${servicos.nome}" th:href="@{/servicos/{id} (id=${servicos.id})}"></a>
+							<td th:text="${servicos.nome}">
 							</td>
 							<td th:text="${servicos.descricao}"></td>
 							<td>
