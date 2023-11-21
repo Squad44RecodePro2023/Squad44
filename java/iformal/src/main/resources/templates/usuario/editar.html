@@ -36,7 +36,7 @@
 
   <main class="container mt-5">
     <h1>Edição de Usuário</h1>
-    <form method="POST" th:object="${usuario}" enctype="multipart/form-data">
+    <form method="POST" th:object="${usuario}">
       <input type="hidden" th:field="*{id}">
       <div class="mb-3">
         <label for="nome" class="form-label">Nome</label>
