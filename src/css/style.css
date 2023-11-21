@@ -50,11 +50,7 @@ footer .row>div {
     align-items: center;
 }
 
-#btnTema {
-    position: absolute;
-    right: 1rem;
-    top: .6rem;
-}
+
 
 @media screen and (max-width: 1000px) {
     #btnTema {
