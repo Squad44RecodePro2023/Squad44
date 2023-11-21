@@ -37,7 +37,7 @@
   <main class="container mt-5">
     <div class="row">
 			<div class="col-sm-12">
-				<h1>Listagem de Usuários</h1>
+				<h1>Listagem de Serviços</h1>
 			</div>
 		</div>
 
@@ -63,7 +63,7 @@
 									Editar
 								</a>
 								<a th:href="@{/servicos/{id}/excluir (id=${servicos.id})}" class="btn btn-danger"
-									onclick="return confirm('Tem certeza que deseja excluir o cliente?');">
+									onclick="return confirm('Tem certeza que deseja excluir o Serviço?');">
 									Excluir
 								</a>
 							</td>
@@ -75,7 +75,7 @@
 
 		<div class="row">
 			<div class="col-sm-12">
-				<a th:href="@{/servicos/cadastrar}" class="btn btn-primary">Cadastrar novo Cliente</a>
+				<a th:href="@{/servicos/cadastrar}" class="btn btn-primary">Cadastrar novo Serviço</a>
 			</div>
 		</div>
   </main>

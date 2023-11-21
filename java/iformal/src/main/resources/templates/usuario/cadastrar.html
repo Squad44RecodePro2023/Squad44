@@ -36,7 +36,7 @@
   
   <main class="container mt-5">
     <h1>Cadastro de Usuário</h1>
-    <form method="POST" th:object="${usuario}" enctype="multipart/form-data">
+    <form method="POST" th:object="${usuario}">
       <div class="mb-3">
         <label for="nome" class="form-label">Nome</label>
         <input type="text" class="form-control" id="nome" th:field="*{nome}" required>
